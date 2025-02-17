@@ -1,0 +1,165 @@
+@mixin button-styles($bg-color, $text-color, $hover-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+@mixin button-plain-styles($bg-color, $text-color, $hover-color) {
+  background-color: transparent;
+  color: $text-color;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+
+  &:hover {
+    background-color: $bg-color;
+    color: $hover-color;
+  }
+}
+
+@mixin button-outline-styles($border-color, $bg-color, $hover-color) {
+  outline: unset;
+  background-color: transparent;
+  border: 1px solid $border-color;
+  color: $border-color;
+
+  &:hover {
+    background-color: $bg-color;
+    border: 1px solid $hover-color;
+    color: $hover-color;
+  }
+}
+
+.btn-primary {
+  @include button-styles(
+    var(--color-primary),
+    var(--color-primary-text),
+    var(--color-primary-hover)
+  );
+
+  &.outline {
+    @include button-outline-styles(
+      var(--color-primary),
+      var(--color-primary),
+      var(--color-primary-text)
+    );
+  }
+
+  &.soft {
+    @include button-styles(
+      var(--color-primary-light),
+      var(--color-primary-text),
+      var(--color-primary-hover)
+    );
+  }
+
+  &.plain {
+    @include button-plain-styles(
+      var(--color-primary),
+      var(--color-primary),
+      var(--color-primary-text)
+    );
+  }
+}
+
+.btn-error {
+  @include button-styles(
+    var(--color-error),
+    var(--color-error-text),
+    var(--color-error-hover)
+  );
+
+  &.outline {
+    @include button-outline-styles(
+      var(--color-error),
+      var(--color-error),
+      var(--color-error-text)
+    );
+  }
+
+  &.soft {
+    @include button-styles(
+      var(--color-error-light),
+      var(--color-error-text),
+      var(--color-error-hover)
+    );
+  }
+
+  &.plain {
+    @include button-plain-styles(
+      var(--color-error),
+      var(--color-error),
+      var(--color-error-text)
+    );
+  }
+}
+
+.btn-success {
+  @include button-styles(
+    var(--color-success),
+    var(--color-success-text),
+    var(--color-success-hover)
+  );
+
+  &.outline {
+    @include button-outline-styles(
+      var(--color-success),
+      var(--color-success),
+      var(--color-success-text)
+    );
+  }
+
+  &.soft {
+    @include button-styles(
+      var(--color-success-light),
+      var(--color-success-text),
+      var(--color-success-hover)
+    );
+  }
+
+  &.plain {
+    @include button-plain-styles(
+      var(--color-success),
+      var(--color-success),
+      var(--color-success-text)
+    );
+  }
+}
+
+.btn-warning {
+  @include button-styles(
+    var(--color-warning),
+    var(--color-warning-text),
+    var(--color-warning-hover)
+  );
+
+  &.outline {
+    @include button-outline-styles(
+      var(--color-warning),
+      var(--color-warning),
+      var(--color-warning-text)
+    );
+  }
+
+  &.soft {
+    @include button-styles(
+      var(--color-warning-light),
+      var(--color-warning-text),
+      var(--color-warning-hover)
+    );
+  }
+
+  &.plain {
+    @include button-plain-styles(
+      var(--color-warning),
+      var(--color-warning),
+      var(--color-warning-text)
+    );
+  }
+}

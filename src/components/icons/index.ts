@@ -1,0 +1,8 @@
+export { default as ArrowIcon } from './svg/Arrow'
+export { default as CalendarIcon } from './svg/Calendar'
+export { default as CloseIcon } from './svg/Close'
+export { default as DeleteIcon } from './svg/Delete'
+export { default as DownloadIcon } from './svg/Download'
+export { default as EditIcon } from './svg/Edit'
+export { default as SearchIcon } from './svg/Search'
+export { default as UserProfileIcon } from './svg/UserProfileIcon'

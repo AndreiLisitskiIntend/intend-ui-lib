@@ -1,0 +1,21 @@
+@use 'variables';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 1rem;
+  font-family: var(--font-montserrat), sans-serif;
+  line-height: 1.5rem;
+  color: var(--color-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-neutral-light);
+}
+
+body {
+  font-size: 1rem;
+}

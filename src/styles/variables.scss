@@ -1,0 +1,62 @@
+:root {
+  /* Fonts */
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-size: 1rem;
+
+  /* Paddings */
+  --space-xs: 0.5rem; /* 8px / 16 = 0.5rem */
+  --space-sm: 1rem; /* 16px / 16 = 1rem */
+  --space-md: 1.5rem; /* 24px / 16 = 1.5rem */
+  --space-lg: 2rem; /* 32px / 16 = 2rem */
+  --space-xl: 3rem; /* 48px / 16 = 3rem */
+
+  /* Rounds */
+  --border-radius-sm: 0.25rem; /* 4px / 16 = 0.25rem */
+  --border-radius-md: 0.5rem; /* 8px / 16 = 0.5rem */
+  --border-radius-lg: 1rem; /* 16px / 16 = 1rem */
+  --border-radius-xl: 2rem;
+
+  /* Colors */
+  --color-primary: #412636;
+  --color-primary-hover: #5a3348;
+  --color-primary-light: #70415d;
+  --color-primary-active: #2d1a26;
+  --color-primary-bg: #ecdee6;
+  --color-primary-text: #ffffff;
+
+  --color-warning: #facc15;
+  --color-warning-hover: #eab308;
+  --color-warning-light: #fce96a;
+  --color-warning-active: #ca8a04;
+  --color-warning-bg: #fdfdea;
+  --color-warning-text: #ffffff;
+
+  --color-success: #35c95a;
+  --color-success-hover: #059669;
+  --color-success-light: #84e1bc;
+  --color-success-active: #047857;
+  --color-success-bg: #f3faf7;
+  --color-success-text: #ffffff;
+
+  --color-neutral: #9e9e9e;
+  --color-neutral-hover: #d9d9d9;
+  --color-neutral-light: #d1d5db;
+  --color-neutral-active: #374151;
+  --color-neutral-border: #d1d5db;
+  --color-neutral-bg: #ffffff;
+  --color-neutral-text: #412636;
+
+  --color-error: #c50a0d;
+  --color-error-hover: #dc2626;
+  --color-error-light: #f8b4b4;
+  --color-error-active: #dc2626;
+  --color-error-bg: #fdf2f2;
+  --color-error-text: #ffffff;
+
+  --color-info: #1c64f2;
+  --color-info-hover: #1a56db;
+  --color-info-light: #a4cafe;
+  --color-info-active: #1e429f;
+  --color-info-bg: #ebf5ff;
+  --color-info-text: #ffffff;
+}
